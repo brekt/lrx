@@ -1,0 +1,22 @@
+{
+  "name": "lrx",
+  "version": "0.0.1",
+  "description": "Share and edit song lyrics across screens.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brekt/lrx.git"
+  },
+  "author": "Mike Burnett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brekt/lrx/issues"
+  },
+  "homepage": "https://github.com/brekt/lrx#readme",
+  "devDependencies": {
+    "webpack": "^4.28.3"
+  }
+}

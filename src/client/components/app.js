@@ -1,4 +1,5 @@
 import React, { Component }  from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export default class App extends Component {
 	constructor(props) {
@@ -35,19 +36,22 @@ export default class App extends Component {
 	render() {
 		const { songs } = this.state;
 		return(
-			<ul>
-				{
-					songs.map(song => {
-						return (
-							<li
-								key={song}
-							>
-								{song}
-							</li>
-						);
-					})
-				}
-			</ul>
-		)
+			<Router>
+				<ul>
+					{
+						songs.map(song => {
+							const link = `/${song}`;
+							return (
+								<li
+									key={song}
+								>
+									<Link to={link}>{song}</Link>
+								</li>
+							);
+						})
+					}
+				</ul>
+			</Router>
+		);
 	}
 }
